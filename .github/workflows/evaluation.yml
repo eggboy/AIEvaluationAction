@@ -43,3 +43,8 @@ jobs:
         uses: microsoft/genai-evals@main 
         with: 
           evaluate-configuration: ${{ env.GENAI_EVALS_CONFIG_PATH }}
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: genai-evals-results
+          path: /home/runner/.promptflow/.runs/*
