@@ -22,7 +22,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
       - name: Write evaluate config 
         run: | 
-          cat > ${{ env.GENAI_EVALS_CONFIG_PATH }} <<EOF 
+          cat > ${{ env.GENAI_EVALS_CONFIG_PATH }} <<EOF
           { 
             "data": "${{ env.GENAI_EVALS_DATA_PATH }}", 
             "evaluators": { 
@@ -37,7 +37,7 @@ jobs:
               "api_version": "${{ secrets.AZURE_OPENAI_API_VERSION }}" 
             } 
           } 
-          EOF 
+          EOF
       - name: Run AI Evaluation 
         id: run-ai-evaluation 
         uses: microsoft/genai-evals@main 
