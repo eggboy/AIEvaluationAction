@@ -1,4 +1,4 @@
-name: Sample Evaluate Action 
+name: GPT-4.1 Evaluate Action 
 on: 
   workflow_call: 
   workflow_dispatch: 
