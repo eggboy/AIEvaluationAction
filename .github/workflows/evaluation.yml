@@ -47,4 +47,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: genai-evals-results
-          path: /home/runner/.promptflow/.runs/*
+          path: /home/runner/work/_actions/microsoft/genai-evals/main/results.jsonl
